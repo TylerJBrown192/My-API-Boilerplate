@@ -1,0 +1,19 @@
+{
+  "name": "my-api-boilerplate",
+  "version": "1.0.0",
+  "description": "My custom API boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerJBrown192/My-API-Boilerplate.git"
+  },
+  "author": "Tyler Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylerJBrown192/My-API-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/TylerJBrown192/My-API-Boilerplate#readme"
+}
