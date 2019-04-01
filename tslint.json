@@ -5,6 +5,10 @@
     ],
     "jsRules": {},
     "rules": {
+        "max-line-length": [
+            true,
+            180
+        ],
         "trailing-comma": [
             false
         ],
@@ -13,6 +17,18 @@
         ],
         "no-console": [
             false
+        ],
+        "typedef": [
+            true,
+            "call-signature",
+            "arrow-call-signature",
+            "parameter",
+            "arrow-parameter",
+            "property-declaration",
+            "variable-declaration",
+            "member-variable-declaration",
+            "object-destructuring",
+            "array-destructuring"
         ]
     },
     "rulesDirectory": []

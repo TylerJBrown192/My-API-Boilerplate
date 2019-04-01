@@ -4,10 +4,11 @@
   "description": "My custom API boilerplate",
   "main": "dist/app.js",
   "scripts": {
-    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prebuild": "tslint -p tsconfig.json",
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "node .",
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,11 +22,17 @@
   },
   "homepage": "https://github.com/TylerJBrown192/My-API-Boilerplate#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
+    "@types/errorhandler": "0.0.32",
     "@types/express": "^4.16.1",
     "@types/node": "^11.12.2",
+    "errorhandler": "^1.5.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.3",
     "tslint": "^5.14.0",
     "typescript": "^3.4.1"
   }
