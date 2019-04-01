@@ -2,8 +2,12 @@
   "name": "my-api-boilerplate",
   "version": "1.0.0",
   "description": "My custom API boilerplate",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/TylerJBrown192/My-API-Boilerplate/issues"
   },
-  "homepage": "https://github.com/TylerJBrown192/My-API-Boilerplate#readme"
+  "homepage": "https://github.com/TylerJBrown192/My-API-Boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.12.2",
+    "tslint": "^5.14.0",
+    "typescript": "^3.4.1"
+  }
 }
